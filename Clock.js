@@ -15,7 +15,7 @@ set.addEventListener("click", () => {
   secInput.value = "";
   set.style.display = "none";
   moringNight.style.display = "none";
-  conatiner.style.marginTop = "200px";
+  conatiner.style.marginTop = "110px";
   input.forEach((inp) => {
     inp.style.display = "none";
   });
@@ -26,10 +26,6 @@ function stopwatch() {
   hrCounter = hourInput.value;
   minCounter = minInput.value;
   secCounter = secInput.value;
-  //   hour.innerHTML = hrCounter;
-  //   min.innerHTML = minCounter;
-  //   sec.innerHTML = secCounter;
-
   interval = setInterval(() => {
     secCounter++;
     hour.innerHTML = "0" + hrCounter;
@@ -100,13 +96,5 @@ input.forEach((validate) => {
     if (secInput.value.length > 2 || secInput.value > 60) {
       secInput.value = "";
     }
-    // if (hourInput.value == "" || minInput.value == "" || secInput.value == "") {
-    //   moringNight.style.display = "initial";
-    //   conatiner.style.marginTop = "39px";
-    //   input.forEach((inp) => {
-    //     inp.style.display = "initial";
-    //     stopInterval();
-    //   });
-    // }
   });
 });
