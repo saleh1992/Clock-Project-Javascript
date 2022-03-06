@@ -98,12 +98,13 @@ button {
   height: 30px;
   border-radius: 29px;
   margin: 0px 12px;
-  border: none;
   font-size: 18px;
   cursor: pointer;
   font-weight: 600;
   background: #8f5c6d;
   color: white;
+  border: 1px solid;
+  line-height: 29px;
 }
 
 .setinputs {
