@@ -48,7 +48,13 @@ div {
   font-size: 85px;
   color: #ffffff;
 }
-
+@media (max-width: 450px) {
+  #sec,
+  #min,
+  #hour {
+    font-size: 65px;
+  }
+}
 #min::before,
 #hour::before {
   content: ":";
