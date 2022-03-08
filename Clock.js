@@ -53,7 +53,7 @@ function stopwatch() {
     if (hrCounter > 9) {
       hour.innerHTML = hrCounter;
     }
-    if (hrCounter == 12) {
+    if (hrCounter == 12 && minCounter == 59) {
       hrCounter = 1;
     }
 
