@@ -55,6 +55,7 @@ function stopwatch() {
     }
     if (hrCounter == 12 && minCounter == 59) {
       hrCounter = 1;
+      minCounter= 0;
     }
 
     if (hrCounter == 11 && minCounter == 59 && time.innerHTML == "PM") {
